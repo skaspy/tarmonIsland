@@ -21,12 +21,10 @@ package UI;
 import Spielelogik.Player;
 import Spielelogik.Players;
 import java.io.*;
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Map;
 import javax.servlet.*;
 import javax.servlet.http.*;
-import jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator;
 
 // Extend HttpServlet class
 public class Api extends HttpServlet {
@@ -76,17 +74,23 @@ public class Api extends HttpServlet {
                 + "    <tr>\n"
                 + "      <th scope=\"col\">Nick</th>\n"
                 + "      <th scope=\"col\">Lehen</th>\n"
-                + "      <th scope=\"col\">Last</th>\n"
+                + "      <th scope=\"col\">Last Action</th>\n"
                 + "      <th scope=\"col\">Action left</th>\n"
                 + "    </tr>\n"
                 + "  </thead>\n"
                 + "  <tbody>");
 
         for (Player p : Players.getInstance().getPlayers()) {
+            
+            // Format last active date
+            SimpleDateFormat dLastActive = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+            Date dt = p.getLastActiv();
+            String sLastActive = dLastActive.format(dt);
+            
             status.append("<tr>");
             status.append("<td>" + p.getNickname() + "</td>");
             status.append("<td>" + p.getLehen().getName() + "</td>");
-            status.append("<td>" + p.getLastActiv() + "</td>");
+            status.append("<td>" + sLastActive + "</td>");
             status.append("<td>" + (p.getLehen().getLeftCommands()) + "</td>");
             status.append("</tr>");
         }
