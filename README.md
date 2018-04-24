@@ -17,6 +17,7 @@ We use git with the following strategie:
 
 IMPORTANT
 LEAVE THE Jetty Distribution (lib/jetty-distribution-9.4.9.v20180320/) UNTRACKED AND DO NOT MODIFY THE .gitignore!
+DO NOT git add *.java! OTHERWISE The Jetty Distribution WILL BE TRACKED...
  
 
 # Environment
