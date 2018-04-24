@@ -19,3 +19,10 @@ We use git with the following strategie:
 - we use the Jetty Distribution jetty-distribution-9.4.9.v20180320 (http://central.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.4.9.v20180320/jetty-distribution-9.4.9.v20180320.zip)
 - import the jars into the project and compile our sources
 
+# Project File Structure
+/
+/src
+/nbproject
+/lib/jetty-distribution-9.4.9.v20180320 - expand Jetty Distribution here
+
+
