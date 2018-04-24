@@ -10,9 +10,15 @@ Tarmon Island (http://behindthemirrors.de/ti/) is a Game developed in the 90ies 
 
 # Workflow
 We use git with the following strategie:
+- always do Source|Format and Source|Fix Imports to push clean code
 - write a description in the issue part to be referenced by the branches
 - every feature/hotfix will be developed in a new branch which is deleted afterwards
 - we use the following convention: feature/NN-my-new-feature-name-12345 (if there is a named issue in github, then take the issue number afterwards), NN are the initals of your name
+
+IMPORTANT
+LEAVE THE Jetty Distribution (lib/jetty-distribution-9.4.9.v20180320/) UNTRACKED AND DO NOT MODIFY THE .gitignore!
+DO NOT git add *.java! OTHERWISE The Jetty Distribution WILL BE TRACKED...
+ 
 
 # Environment
 - we use Netbeans 8.2 with Java SE 8
