@@ -20,9 +20,9 @@ We use git with the following strategie:
 - import the jars into the project and compile our sources
 
 # Project File Structure
-/
-/src
-/nbproject
-/lib/jetty-distribution-9.4.9.v20180320 - expand Jetty Distribution here
+- /
+- /src
+- /nbproject
+- /lib/jetty-distribution-9.4.9.v20180320 - expand Jetty Distribution here
 
 
