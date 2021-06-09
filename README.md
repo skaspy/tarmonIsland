@@ -1,14 +1,14 @@
 # tarmonIsland
 Round-Based Game
 
-# Idea
-Tarmon Island (http://behindthemirrors.de/ti/) is a Game developed in the 90ies (Play-by-Email). We try to port the idea into nower days with a java based browser multiplayer game. The actual implementation has the following goals:
+## Idea
+Tarmon Island (http://behindthemirrors.de/ti/) is a game developed in the 90ies (Play-by-Email). We try to port the idea into nowadays with a java based browser multiplayer game. The actual implementation has the following goals:
 - learn how to develop with git
 - learn how to manage a project (with more the 2 developers)
 - improve programming skills
 - examine, if programming a this level with a versioning system, could fit into normal computer science lessons
 
-# Workflow
+## Workflow
 We use git with the following strategie:
 - always do Source|Format and Source|Fix Imports to push clean code
 - write a description in the issue part to be referenced by the branches
@@ -20,12 +20,12 @@ LEAVE THE Jetty Distribution (lib/jetty-distribution-9.4.9.v20180320/) UNTRACKED
 DO NOT git add *.java! OTHERWISE The Jetty Distribution WILL BE TRACKED...
  
 
-# Environment
+## Environment
 - we use Netbeans 8.2 with Java SE 8
 - we use the Jetty Distribution jetty-distribution-9.4.9.v20180320 (http://central.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.4.9.v20180320/jetty-distribution-9.4.9.v20180320.zip)
 - import the jars into the project and compile our sources
 
-# Project File Structure
+## Project File Structure
 - /
 - /src
 - /nbproject
