@@ -1,5 +1,5 @@
 # tarmonIsland
-Round-Based Game
+Round-Based strategy game situated on an island in the Middle Ages.
 
 ## Idea
 Tarmon Island (http://behindthemirrors.de/ti/) is a game developed in the 90ies (Play-by-Email). We try to port the idea into nowadays with a java based browser multiplayer game. The actual implementation has the following goals:
